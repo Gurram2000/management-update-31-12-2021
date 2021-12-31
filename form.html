@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>STUMAN</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MODAL BOX -->
+
+
+    
+ 
+  </head>
+
+
+<!-- BODY STARTS :) -->
+
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">STUMAN</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+  
+ 
+    <ul class="nav-list">
+      <li>
+        <a href="index.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+          
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+        <a href="form.html">
+          <i class='bx bx-user'></i>
+          <span class="links_name">Enroll</span>
+          
+        </a>
+         <span class="tooltip">Enroll</span>
+      </li>
+      <li>
+        <a href="table.html">
+          <i class='bx bx-chat'></i>
+          <span class="links_name">student list</span>
+          
+        </a>
+         <span class="tooltip">Student List</span>
+      </li>
+      
+    </ul>
+  </div>
+<!-- --------------------------------------------------ForM Secion -------------------------------------------------------------------- -->
+  <section class="home-section">
+         
+                <div class="container1">
+                          <h1>ENROLL FORM</h1>
+                          <form action="#" onsubmit="return validation()" class="bg-light">
+				
+                            <div class="form-group">
+                              <label for="user" class="font-weight-bold"> Name: </label>
+                              <input type="text" name="user" class="form-control" id="user" autocomplete="off">
+                              <span id="username" class="text-danger font-weight-bold"> </span>
+                            </div>
+                    
+                            <div class="form-group">
+                              <label class="font-weight-bold"> Gender </label>
+                              
+                              <input type="radio" name="gender" value="male" class="form-control" id="m" >MALE
+                              <!-- <label class="font-weight-bold"> Male </label> -->
+                              <!-- <span id="male" class="text-danger font-weight-bold"> </span> -->
+                              <input type="radio" name="gender" value="female" class="form-control" id="f" >FEMALE
+                              <!-- <label class="font-weight-bold"> Female </label> -->
+                              <!-- <span id="female" class="text-danger font-weight-bold"> </span> -->
+                            </div>
+                    
+                            <div class="form-group">
+                              <label class="font-weight-bold"> DOJ </label>
+                              <input type="date" name="date" class="form-control" id="date" autocomplete="off">
+                              <span id="date" class="text-danger font-weight-bold"> </span>
+                            </div>
+
+                    
+                            <div class="form-group">
+                              <label class="font-weight-bold"> Mobile Number: </label>
+                              <input type="text" name="mobile" class="form-control" id="mobileNumber" autocomplete="off">
+                              <span id="mobileno" class="text-danger font-weight-bold"> </span>
+                            </div>
+                    
+                            
+                            
+                    
+                            <input type="submit" onclick="saveData()" name="submit" value="submit" class="btn btn-success" 	autocomplete="off">
+                            
+                            
+                    
+                          </form><br><br>
+                    
+                    
+                          
+                            
+
+                </div>
+                     
+       
+      
+  </section>
+
+  <script src="script.js"></script>
+  <script src="form1.js"></script>
+  
+
+  
+
+</body>
+</html>
